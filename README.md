@@ -20,8 +20,8 @@ This project uses a [W3.CSS](https://www.w3schools.com/), [HTML](https://develop
 ## Repo Resources
 
 * [BrickMMO](https://www.brickmmo.com/)
-* [Loot Crypto Coin](https://loot.brickmmo.com/)
-* [Loot Crypto Coin Branding Guidelines](https://branding.brickmmo.com/loot)
+* [Watt Wrong Corporation](https://wattswrong.brickmmo.com/)
+* [Watt Wrong Corporation Branding Guidelines](https://branding.brickmmo.com/watts)
 
 <a href="https://brickmmo.com">
 <img src="https://cdn.brickmmo.com/images@1.0.0/brickmmo-logo-coloured-horizontal.png" width="200">
