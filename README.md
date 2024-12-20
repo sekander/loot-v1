@@ -2,6 +2,9 @@
 
 This repo stores the website for the BrickMMO Loot Crypto Coin brand. 
 
+> This repo is available to view at  
+> [https://loot.brickmmo.com](https://loot.brickmmo.com)
+
 ---
 
 ## Project Stack
