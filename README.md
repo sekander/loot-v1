@@ -4,6 +4,12 @@ This repo stores the website for the BrickMMO Loot Crypto Coin brand.
 
 <img src="https://branding.brickmmo.com/loot/Loot_Logo.jpg" width="300">
 
+> This repo is available to view at  
+> https://loot.brickmmo.com
+
+> Loot branding guidelines are available at:  
+> https://branding.brickmmo.com/loot
+
 ---
 
 ## Project Stack
@@ -17,8 +23,8 @@ This project uses a [W3.CSS](https://www.w3schools.com/), [HTML](https://develop
 ## Repo Resources
 
 * [BrickMMO](https://www.brickmmo.com/)
-* [Watts Wrong Corporation](https://wattswrong.brickmmo.com/)
-* [Watts Wrong Corporation Branding Guidelines](https://branding.brickmmo.com/watts)
+* [Loot](https://loot.brickmmo.com/)
+* [Loot Branding Guidelines](https://branding.brickmmo.com/loot)
 
 <a href="https://brickmmo.com">
 <img src="https://cdn.brickmmo.com/images@1.0.0/brickmmo-logo-coloured-horizontal.png" width="200">
