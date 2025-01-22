@@ -40,15 +40,15 @@ body{
 }
 
 @font-face{
-    font-family: 'Bobba Tea';
-    src: url('/font/Bobba\ Tea.ttf')format('truetype')
+    font-family: 'BobbaTea';
+    src: url('/font/BobbaTea.ttf') format('truetype');
 }
 
 /* heading */
 h1{
   
     position: absolute;
-    font-family: 'Bobba Tea',sans-serif;
+    font-family: 'BobbaTea',sans-serif;
     background: linear-gradient(90deg, #2830CE 31.18%, #2BCC9E 66.74%);
     width: 1753px;
     height: 204.765px;
@@ -66,6 +66,11 @@ h1{
     transform: translate(-50%, -50%);
     
 
+ }
+
+ h2{
+    font-family: 'Bobba Tea';
+    color:white
  }
 
  .reflect{
