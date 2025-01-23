@@ -124,13 +124,44 @@ p{
     line-height: 16px; /* 100% */
     letter-spacing: 0.8px;
     transition: 1s;
+    position: relative;
  }
 
-a:hover{
-transition: 1s;
-color: #2BCC9E;
+ a{
+    background-color: black;
+ }
+ @property --angle{
+    syntax: "<angle>";
+    initial-value: 0deg;
+    inherits: false;
+ }
 
+.top-nav-animation::after, .top-nav-animation::before{
+
+content: '';
+position: absolute;
+height: 100%;
+width: 100%;
+background-image: conic-gradient(from var(--angle),#e4ede9,#2830ce,#2bcc9e,#e4ede9);
+top:50%;
+left:50%;
+translate: -50% -50%;
+z-index: -1;
+padding: 2px;
+border-radius: 5px;
+animation: 3s spin linear infinite;
+display: none;
 }
+
+.top-nav-animation::before{
+    filter: blur(1.5rem);
+    opacity: 0.5;
+}
+
+.top-nav-animation:hover::after{
+    display: block;
+}
+
 /* button */
 button {
     flex-shrink: 0;
@@ -164,6 +195,7 @@ button::before {
     transform-origin: left;
     transition: transform 0.5s ease-in;
     z-index: -1;
+   
 }
 
 button:hover {
@@ -278,4 +310,14 @@ th,td{
     top:250%;
     left: 40%;
     flex-direction: column;
+}
+
+/* animations */
+
+@keyframes spin{
+    from {
+        --angle:0deg
+    } to{
+        --angle:360deg
+    }
 }
