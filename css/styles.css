@@ -227,10 +227,7 @@ button:hover::before {
 
 /* footer-nav */
 
-.footer-space{
-    left: 60%;
-    margin-left: 20px;
-}
+
 
 .footer-nav-title{
     position: absolute;
@@ -238,34 +235,41 @@ button:hover::before {
     font-weight: 700;
 }
 
-.footer-nav{
-  
-    display: flex;
-    flex-direction: column;
-}
+
 
 .footer a{
     flex-shrink: 0;
-    text-align: left;
-    transform: translate(-50%, -50%);
-    font-size: 20px;
-    margin-left: 64%;
+    font-size: 15px;
+    margin-left: 10%;
     margin-top: 20px;
     color: #e4ede9;
     text-decoration: none;
-    display: inline-block;
     transition: 1s;
    
 }
 
 .footer a:hover{
+    
     transition: 1s;
     color: #2BCC9E;
 }
 
+table{
+    
+    border-spacing: 50px 10px;
+    border-collapse: separate;
+    position: absolute;
+    left:60%;
+   
+}
+
+th,td{
+    text-align: left;
+    white-space: nowrap;
+}
 
 
-/* info */
+/* contributors and Brickmmo project */
 
 .info{
     position: absolute;
