@@ -1,0 +1,342 @@
+
+
+/* To fill out any white spaces */
+body{
+    background-color: black;
+    margin: 0;
+    overflow-x: hidden;
+}
+
+
+/* video design */
+.fullscreen{
+    position: fixed;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    overflow: hidden;
+    z-index: -100;
+}
+
+.video-bg{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    opacity: 0.5;
+}
+
+
+/*horizontal logo */
+
+.logo-top{
+    position: absolute;
+    width: 100px;
+    height: 50px;
+    top:3%;
+    left:3%;
+}
+
+@font-face{
+    font-family: 'BobbaTea';
+    src: url('/font/BobbaTea.ttf') format('truetype');
+}
+
+/* heading */
+h1{
+  
+    position: absolute;
+    font-family: 'BobbaTea',sans-serif;
+    background: linear-gradient(90deg, #2830CE 31.18%, #2BCC9E 66.74%);
+    width: 1753px;
+    height: 204.765px;
+    flex-shrink: 0;
+    text-align: center;
+    font-size: 72px;
+    font-weight: 800;
+    line-height: normal;
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    /*-webkit-text-stroke: 1px #e4ede9; */
+    top: 20%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    
+
+ }
+
+ h2{
+    font-family: 'Bobba Tea';
+    color:white
+ }
+
+ .reflect{
+    top:30%;
+    -webkit-box-reflect: below -250px linear-gradient(to bottom, rgba(0,0,0,0), rgba(0,0,0,1));
+}
+ /* main text */
+main{
+    display: flex;
+    justify-content: center;
+}
+
+p{
+    font-family:'Lato', serif;
+    color: #e4ede9;
+    text-align:center;
+}
+
+.main-text{
+    flex-shrink: 0;
+    text-align: center;
+    transform: translate(-50%, -50%);
+    position: absolute;
+    left:50%;
+    top:45%;
+   
+}
+
+
+   
+ 
+
+ /* top navigation */
+
+.top-nav{
+    margin-top: 20px;
+    margin-right: 20px;
+    display: flex;
+    float: right;
+    gap:60px;
+}
+
+ .top-nav a{
+    font-family:'Lato', serif;
+    text-decoration: none;
+    text-align: center;
+    color: #e4ede9;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 16px; /* 100% */
+    letter-spacing: 0.8px;
+    transition: 1s;
+    position: relative;
+ }
+
+ a{
+    background-color: black;
+ }
+ @property --angle{
+    syntax: "<angle>";
+    initial-value: 0deg;
+    inherits: false;
+ }
+
+.top-nav-animation::after, .top-nav-animation::before{
+
+content: '';
+position: absolute;
+height: 100%;
+width: 100%;
+background-image: conic-gradient(from var(--angle),#e4ede9,#2830ce,#2bcc9e,#e4ede9);
+top:50%;
+left:50%;
+translate: -50% -50%;
+z-index: -1;
+padding: 2px;
+border-radius: 5px;
+animation: 3s spin linear infinite;
+display: none;
+}
+
+.top-nav-animation::before{
+    filter: blur(1.5rem);
+    opacity: 0.7;
+}
+
+.top-nav-animation:hover::after{
+    display: block;
+}
+
+/* button */
+button {
+    flex-shrink: 0;
+    text-align: center;
+    transform: translate(-50%, -50%);
+    position: absolute;
+    display: inline-block;
+    overflow: hidden;
+    transition: color 1s ease-in;
+    width: 148px;
+    height: 50px;
+    border-radius: 50px;
+    border: 1px solid #2830CE;
+    background-color: rgba(0, 0, 0, 0);
+    color: #e4ede9;
+    z-index: 1;
+    left: 43%;
+    top: 60%;
+}
+
+
+button::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(90deg, #2830CE 1%, #2BCC9E 99.93%);
+    border-radius: inherit;
+    transform: scaleX(0);
+    transform-origin: left;
+    transition: transform 0.5s ease-in;
+    z-index: -1;
+   
+}
+
+button:hover {
+    color: #e4ede9;
+}
+
+button:hover::before {
+    transform: scaleX(1);
+}
+
+/*why choose loot? */
+
+.why{
+    position: absolute;
+    flex-shrink: 0;
+    text-align: center;
+    transform: translate(-50%, -50%);
+    font-size: 55px;
+    left:50%;
+    top:100%;
+}
+
+.reason{
+    
+   display: flex;
+   flex-direction: row;
+   gap: 20px;
+   justify-content: center;
+   position: absolute;
+   top:140%;
+   left:50%;
+   transform: translate(-50%, -50%);
+
+}
+
+/* img */
+
+
+
+.reason-img{
+    width: 350px;
+    animation: appear 5s linear;
+    animation-timeline: view(); 
+    animation-range: entry 0% cover 40%;
+}
+
+/* footer */
+
+.footer{
+    
+    position: absolute;
+    top:200%;
+    border-style: solid;
+    height: 260px;
+    width: 99%;
+    color: #2830CE;
+}
+
+.logo-bottom{
+    top:55%;
+    position: absolute;
+    left:15%;
+    width: 100px;
+    transform: translate(-50%, -50%);
+   
+}
+
+/* footer-nav */
+
+
+
+.footer-nav-title{
+    position: absolute;
+    font-size: 20px;
+    font-weight: 700;
+}
+
+
+
+.footer a{
+    flex-shrink: 0;
+    font-size: 15px;
+    margin-left: 10%;
+    margin-top: 20px;
+    color: #e4ede9;
+    text-decoration: none;
+    transition: 1s;
+   
+}
+
+.footer a:hover{
+    
+    transition: 1s;
+    color: #2BCC9E;
+}
+
+table{
+    
+    border-spacing: 50px 10px;
+    border-collapse: separate;
+    position: absolute;
+    left:60%;
+   
+}
+
+th,td{
+    text-align: left;
+    white-space: nowrap;
+}
+
+
+/* contributors and Brickmmo project */
+
+.info{
+    position: absolute;
+    display: flex;
+    align-items: center;
+    top:250%;
+    left: 40%;
+    flex-direction: column;
+}
+
+/* animations */
+/*top navigation animation */
+@keyframes spin{
+    from {
+        --angle:0deg
+    } to{
+        --angle:360deg
+    }
+}
+
+/* apepear animation */
+
+@keyframes appear{
+    from{
+        opacity: 0;
+        scale: 0.4;
+    } to {
+        opacity: 1;
+        scale: 1;
+    }
+}
