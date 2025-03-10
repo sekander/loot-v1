@@ -1,0 +1,196 @@
+html, body {
+    visibility: hidden;
+}
+/* Show the page once styles are loaded */
+body {
+    visibility: visible;
+    transition: visibility 0s ease-in 0s;
+}
+
+
+#matrixCanvas {
+        background-color: black;
+        /* background-color: rgba(0,0,0,0); */
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    z-index: -1; 
+    pointer-events: none; 
+}
+.logo-top{
+    position: absolute;
+    width: 180px;
+    top:1%;
+    left:3%;
+    z-index: 2;
+}
+
+body {
+    position: relative;
+    z-index: 1; 
+    color: white;
+    font-family: Arial, sans-serif;
+    padding: 20px;
+}
+
+h1 {
+    
+    font-size: 3rem;
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 3px;
+    text-align: center;
+    margin-bottom: 20px;
+    color: #2bcc9e; /* Matching the Matrix theme */
+}
+
+.text-container {
+    font-family:'Lato', serif;
+    background: rgba(255, 255, 255, 0.05);
+    padding: 20px;
+    border-radius: 8px;
+    backdrop-filter: blur(5px);
+    box-shadow: 0 0 10px rgba(255, 255, 255, 0.1);
+    margin: 20px auto;
+    max-width: 800px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    border-style: solid;
+    border-color: #2bcc9e;
+}
+
+.text-container:hover {
+    transform: scale(1.02);
+    box-shadow: 0 0 15px rgba(255, 255, 255);
+}
+
+p {
+    font-size: 1.2rem;
+    font-weight: 300;
+    color: #e4ede9;
+}
+
+strong {
+    font-weight: 600;
+    color: #2bcc9e; 
+}
+
+nav {
+    display: flex;
+    justify-content: flex-end;
+    
+    
+}
+
+.home-link {
+    margin-right: 10px;
+    font-size: 1rem;
+    text-decoration: none;
+    font-weight: 600;
+    color: #2bcc9e;
+    padding: 10px 20px;
+    border: 2px solid #2830ce;
+    border-radius: 8px;
+    transition: all 0.3s ease-in-out;
+    display: inline-block;
+}
+
+.home-link:hover {
+    background: #2bcc9e;
+    color: #fff;
+    box-shadow: 0 0 10px rgba(40, 48, 206, 0.6);
+    transform: translateY(-3px);
+}
+
+a{
+    flex-shrink: 0;
+    font-size: 15px;
+    margin-top: 20px;
+    color: #e4ede9;
+    text-decoration: none;
+    transition: 1s;
+   
+}
+
+a:hover{
+    
+    transition: 1s;
+    color: #2BCC9E;
+}
+
+/* footer */
+
+.footer{
+    
+    position: absolute;
+    top:100%;
+    border-style: solid;
+    height: 260px;
+    width: 95%;
+    color: #2830CE;
+}
+
+.logo-bottom{
+    top:45%;
+    position: absolute;
+    left:15%;
+    width: 150px;
+    transform: translate(-50%, -50%);
+   
+}
+
+/* footer-nav */
+
+
+
+.footer-nav-title{
+    position: absolute;
+    font-size: 20px;
+    font-weight: 700;
+}
+
+
+
+.footer a{
+    flex-shrink: 0;
+    font-size: 15px;
+    margin-left: 10%;
+    margin-top: 20px;
+    color: #e4ede9;
+    text-decoration: none;
+    transition: 1s;
+   
+}
+
+.footer a:hover{
+    
+    transition: 1s;
+    color: #2BCC9E;
+}
+
+table{
+    
+    border-spacing: 50px 10px;
+    border-collapse: separate;
+    position: absolute;
+    left:60%;
+   
+}
+
+th,td{
+    text-align: left;
+    white-space: nowrap;
+}
+
+
+/* contributors and Brickmmo project */
+
+.info{
+    position: absolute;
+    display: flex;
+    align-items: center;
+    top:250%;
+    left: 40%;
+    flex-direction: column;
+}

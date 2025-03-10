@@ -1,12 +1,9 @@
-
-
 /* To fill out any white spaces */
 body{
     background-color: black;
     margin: 0;
     overflow-x: hidden;
 }
-
 
 /* video design */
 .fullscreen{
@@ -28,26 +25,18 @@ body{
     opacity: 0.5;
 }
 
-
-/*horizontal logo */
-
+/* horizontal logo */
 .logo-top{
     position: absolute;
     width: 180px;
-    top:1%;
-    left:3%;
-}
-
-@font-face{
-    font-family: 'BobbaTea';
-    src: url('/font/BobbaTea.ttf') format('truetype');
+    top: 1%;
+    left: 3%;
 }
 
 /* heading */
 h1{
-  
     position: absolute;
-    font-family: 'BobbaTea',sans-serif;
+    font-family: 'BobbaTea', sans-serif;
     background: linear-gradient(90deg, #2830CE 31.18%, #2BCC9E 66.74%);
     width: 1753px;
     height: 204.765px;
@@ -59,33 +48,31 @@ h1{
     background-clip: text;
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
-    /*-webkit-text-stroke: 1px #e4ede9; */
     top: 20%;
     left: 50%;
     transform: translate(-50%, -50%);
-    
+}
 
- }
-
- h2{
+h2{
     font-family: 'Bobba Tea';
-    color:white
- }
+    color: white;
+}
 
- .reflect{
-    top:30%;
+.reflect{
+    top: 30%;
     -webkit-box-reflect: below -250px linear-gradient(to bottom, rgba(0,0,0,0), rgba(0,0,0,1));
 }
- /* main text */
+
+/* main text */
 main{
     display: flex;
     justify-content: center;
 }
 
 p{
-    font-family:'Lato', serif;
+    font-family: 'Lato', serif;
     color: #e4ede9;
-    text-align:center;
+    text-align: center;
 }
 
 .main-text{
@@ -93,27 +80,21 @@ p{
     text-align: center;
     transform: translate(-50%, -50%);
     position: absolute;
-    left:50%;
-    top:45%;
-   
+    left: 50%;
+    top: 45%;
 }
 
-
-   
- 
-
- /* top navigation */
-
+/* top navigation */
 .top-nav{
     margin-top: 20px;
     margin-right: 20px;
     display: flex;
     float: right;
-    gap:60px;
+    gap: 60px;
 }
 
- .top-nav a{
-    font-family:'Lato', serif;
+.top-nav a{
+    font-family: 'Lato', serif;
     text-decoration: none;
     text-align: center;
     color: #e4ede9;
@@ -124,32 +105,32 @@ p{
     letter-spacing: 0.8px;
     transition: 1s;
     position: relative;
- }
+}
 
- a{
+a{
     background-color: black;
- }
- @property --angle{
+}
+
+@property --angle{
     syntax: "<angle>";
     initial-value: 0deg;
     inherits: false;
- }
+}
 
 .top-nav-animation::after, .top-nav-animation::before{
-
-content: '';
-position: absolute;
-height: 100%;
-width: 100%;
-background-image: conic-gradient(from var(--angle),#e4ede9,#2830ce,#2bcc9e,#e4ede9);
-top:50%;
-left:50%;
-translate: -50% -50%;
-z-index: -1;
-padding: 3px;
-border-radius: 5px;
-animation: 3s spin linear infinite;
-display: none;
+    content: '';
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    background-image: conic-gradient(from var(--angle), #e4ede9, #2830ce, #2bcc9e, #e4ede9);
+    top: 50%;
+    left: 50%;
+    translate: -50% -50%;
+    z-index: -1;
+    padding: 3px;
+    border-radius: 5px;
+    animation: 3s spin linear infinite;
+    display: none;
 }
 
 .top-nav-animation::before{
@@ -181,7 +162,6 @@ button {
     top: 60%;
 }
 
-
 button::before {
     content: '';
     position: absolute;
@@ -195,7 +175,6 @@ button::before {
     transform-origin: left;
     transition: transform 0.5s ease-in;
     z-index: -1;
-   
 }
 
 button:hover {
@@ -206,35 +185,29 @@ button:hover::before {
     transform: scaleX(1);
 }
 
-/*why choose loot? */
-
+/* Why choose Loot? */
 .why{
     position: absolute;
     flex-shrink: 0;
     text-align: center;
     transform: translate(-50%, -50%);
     font-size: 55px;
-    left:50%;
-    top:100%;
+    left: 50%;
+    top: 100%;
 }
 
 .reason{
-    
-   display: flex;
-   flex-direction: row;
-   gap: 20px;
-   justify-content: center;
-   position: absolute;
-   top:140%;
-   left:50%;
-   transform: translate(-50%, -50%);
-
+    display: flex;
+    flex-direction: row;
+    gap: 20px;
+    justify-content: center;
+    position: absolute;
+    top: 140%;
+    left: 50%;
+    transform: translate(-50%, -50%);
 }
 
 /* img */
-
-
-
 .reason-img{
     width: 350px;
     animation: appear 5s linear;
@@ -243,11 +216,9 @@ button:hover::before {
 }
 
 /* footer */
-
 .footer{
-    
     position: absolute;
-    top:200%;
+    top: 200%;
     border-style: solid;
     height: 260px;
     width: 99%;
@@ -255,25 +226,19 @@ button:hover::before {
 }
 
 .logo-bottom{
-    top:45%;
+    top: 45%;
     position: absolute;
-    left:15%;
+    left: 15%;
     width: 150px;
     transform: translate(-50%, -50%);
-   
 }
 
 /* footer-nav */
-
-
-
 .footer-nav-title{
     position: absolute;
     font-size: 20px;
     font-weight: 700;
 }
-
-
 
 .footer a{
     flex-shrink: 0;
@@ -283,59 +248,200 @@ button:hover::before {
     color: #e4ede9;
     text-decoration: none;
     transition: 1s;
-   
 }
 
 .footer a:hover{
-    
     transition: 1s;
     color: #2BCC9E;
 }
 
 table{
-    
     border-spacing: 50px 10px;
     border-collapse: separate;
     position: absolute;
-    left:60%;
-   
+    left: 60%;
 }
 
-th,td{
+th, td{
     text-align: left;
     white-space: nowrap;
 }
 
-
 /* contributors and Brickmmo project */
-
 .info{
     position: absolute;
     display: flex;
     align-items: center;
-    top:250%;
+    top: 250%;
     left: 40%;
     flex-direction: column;
 }
 
 /* animations */
-/*top navigation animation */
 @keyframes spin{
     from {
-        --angle:0deg
-    } to{
-        --angle:360deg
+        --angle:0deg;
+    }
+    to{
+        --angle:360deg;
     }
 }
-
-/* apepear animation */
 
 @keyframes appear{
     from{
         opacity: 0;
         scale: 0.4;
-    } to {
+    }
+    to {
         opacity: 1;
         scale: 1;
+    }
+}
+
+/* Media Queries for Responsiveness */
+@media screen and (max-width: 1200px) {
+    h1 {
+        font-size: 60px;
+    }
+
+    .logo-top {
+        width: 150px;
+        top: 2%;
+        left: 2%;
+    }
+
+    .top-nav {
+        gap: 40px;
+    }
+
+    .top-nav a {
+        font-size: 14px;
+    }
+
+    button {
+        width: 120px;
+        height: 45px;
+    }
+
+    .reason-img {
+        width: 250px;
+    }
+
+    .footer {
+        height: auto;
+        padding: 20px;
+    }
+
+    .logo-bottom {
+        width: 120px;
+    }
+
+    table {
+        left: 50%;
+        transform: translateX(-50%);
+    }
+}
+
+@media screen and (max-width: 768px) {
+    h1 {
+        font-size: 45px;
+    }
+
+    .logo-top {
+        width: 120px;
+        top: 3%;
+        left: 2%;
+    }
+
+    .top-nav {
+        display: block;
+        gap: 20px;
+        text-align: center;
+        margin-top: 20px;
+    }
+
+    .top-nav a {
+        font-size: 12px;
+    }
+
+    .main-text {
+        font-size: 16px;
+        top: 50%;
+    }
+
+    button {
+        width: 100px;
+        height: 40px;
+        left: 50%;
+        transform: translateX(-50%);
+    }
+
+    .reason-img {
+        width: 200px;
+    }
+
+    .footer {
+        padding: 10px;
+    }
+
+    .logo-bottom {
+        width: 100px;
+    }
+
+    table {
+        width: 100%;
+        text-align: center;
+    }
+
+    th, td {
+        font-size: 12px;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    h1 {
+        font-size: 36px;
+    }
+
+    .logo-top {
+        width: 100px;
+        top: 5%;
+        left: 2%;
+    }
+
+    .top-nav a {
+        font-size: 10px;
+    }
+
+    .main-text {
+        font-size: 14px;
+        top: 50%;
+    }
+
+    button {
+        width: 90px;
+        height: 35px;
+        left: 50%;
+        transform: translateX(-50%);
+    }
+
+    .reason-img {
+        width: 150px;
+    }
+
+    .footer {
+        padding: 10px;
+    }
+
+    .logo-bottom {
+        width: 80px;
+    }
+
+    table {
+        width: 100%;
+    }
+
+    th, td {
+        font-size: 10px;
     }
 }
